@@ -1,0 +1,13 @@
+*~
+.idea
+*.iml
+.gradle
+gradlew.bat
+target
+*.ipr
+*.iws
+working
+*data
+docker-compose*
+__pycache__
+pat-waiver
