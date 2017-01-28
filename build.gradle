@@ -18,6 +18,12 @@ jar {
     baseName = 'restaurentmenu'
 }
 
+bootRun {
+    if ( project.hasProperty('args') ) {
+        args project.args.split('\\s+')
+    }
+}
+
 repositories {
     mavenCentral()
 }

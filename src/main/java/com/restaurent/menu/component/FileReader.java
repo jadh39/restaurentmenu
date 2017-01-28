@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -14,23 +15,29 @@ import java.util.stream.Collectors;
 @Component
 public class FileReader {
 
-    //private File file;
-    BufferedReader reader;
+    public List<String> readFile() throws IOException {
 
-    public FileReader() throws IOException {
-      //  file = new ClassPathResource("data.txt").getFile();
-        reader = new BufferedReader(new InputStreamReader(new ClassPathResource("data.txt").getInputStream()));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(new ClassPathResource("data.txt").getInputStream()));
+        return reader.lines().collect(Collectors.toList());
 
     }
-
-    public Long getMaxSatisfaction() throws IOException {
-
-         return
-                //Files.lines(Paths.get(file.getPath()))
-               reader.
-                       lines().
-                       map(line -> Long.parseLong(line.split(" ")[0])).
-                       collect(Collectors.toList()).stream().max(Long::compareTo).get();
-    }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
