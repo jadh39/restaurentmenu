@@ -16,7 +16,7 @@ public class MainClass {
         MenuService menuService = ctx.getBean(MenuService.class);
         System.out.println("--------------------------------------------------------------------------------------");
         System.out.print("");
-        System.out.println("Maximum Satisfaction is " + menuService.getMaxSatisfaction());
+        System.out.println("Maximum Satisfaction is " + menuService.getMaxSatisfaction(Integer.parseInt(args[0])));
         System.out.print("");
         System.out.println("--------------------------------------------------------------------------------------");
     }
