@@ -9,7 +9,7 @@ while running test cases it is using the data.txt from test/resourses.
 This application read the item having weight(time) and value(satisfaction) from Menu (text file data.txt).
 And find out the maximum value(Satisfation) for given weight(time) .
 
-When you run this application it will display Maximum Satisfaction value for given weight on Console.
+When you run this application it will display Maximum Satisfaction value for given time on Console.
 
 How To Run:- To run this application you must have installed Java8, and Gradle is for build the Jar File.
 
