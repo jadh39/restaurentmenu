@@ -19,15 +19,15 @@ got to root directory and run gradle clean build command
 
 :~/restaurentmenu$ gradle clean build
 
-You can run this application using gradle command or java command
+You can run this application using gradle command or java command, You have to pass the time for which you want to find the maximum satisfaction at runtime using command line arguments
 
 run using gradle
 
-:~/restaurentmenu$ gradle bootRun -Pargs="100"
+:~/restaurentmenu$ gradle bootRun -Pargs="100" #command line argument time
 
 Using java command
 
-:~/restaurentmenu$ java -jar ./build/libs/restaurentmenu.jar 100
+:~/restaurentmenu$ java -jar ./build/libs/restaurentmenu.jar 100 #command line argument time
 
 It will show the out put on the console
   .   ____          _            __ _ _
