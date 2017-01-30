@@ -2,6 +2,8 @@
 
 This is Knapsack0/1 problem solved using Java8/SpringBoot Application developed on Intellij Idea using Build Tool Gradle.
 
+For Solving this problem I have used dynamic programming approach having time and space complexity is o(N * W)
+
 For writing Test cases spring-boot-starter-test is used.
 
 while running test cases it is using the data.txt from test/resourses.
